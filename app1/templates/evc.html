@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sayana AI Services</title>
+        
+        {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/sayanaocr.css' %}">
+        <script src="{% static 'js/sayanaocr.js' %}"></script> {% endcomment %}
+    
+        <link rel="stylesheet" href="../../firstpage/static/sayanaocr.css">
+        <link rel="stylesheet" href="../../firstpage/static/sayanaocr.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 20%;">
+            <div style="border-bottom: 1px solid #f4f4f4;">
+                <img src="https://rawattech.com/static/media/Logo.bea90a3f9324e3a374c06ca908e68774.svg"
+                    style="width: 90%; padding: 6%; padding-left: 3rem;" />
+            </div>
+            <div style="padding-top: 2rem;">
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB1ZQNEcIwDIVfewgYCigOsIAUFCABJOAAUAA4GA5wwFAwFGwko8f1uqbr+Lvbd5db1+ReszUJMFi01iulVElWu0auox9L+wc/jo01XjFOcE3MaVl4OndrLpk1F8MHksbYz4Kzm+B9jNVo0PgRo4hvhvbnhsj7Ci+RRt4VcEBahhKZ1WhQUhTfMAIH0a2f6LFBByriM8J+qPy+IuxT9BXeIo1F1Cv90x5kVuOp5whzSxta3vid+j6YcVVVZ3rsAi7uvCtpNJpiHZPAXnBdkECsQXJ8wF9mBdfmFO1KSR6bEFiHhjfSB33JGhgsD27+SsbiDuYVAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="font-size: 1em; color: #111; font-weight: 400;">
+                        <a class="nav-link" href="http://127.0.0.1:8000/sayanaocr/#">Sayana OCR</a>
+                      </p>
+                      
+                    <i class="fa fa-angle-up" style="margin-left: 5rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgB1VTRVcMwDLzk5Z8wQc0EZAPMBoyQTegKTAAbABtkhDIB2aDpBEXXyoliEpPS14/ee/ciWYqinGUDV4s8z5+zLNsK95YS+ohzZf09ziNZo88xyXvBo5htVKdTWpRKC8cPSo3buAt2t8L/4bTGATkuhNnCQW8cNWY33yRt4RPjounryYUxaHijtlNWQs810bPGb60PKIIhSexsZ/xGzU/hRvwX9Rv1+cEvDBvbaY0/UWpnAZXxQ8zjVKim1HgN3XH1vfDN+JOTtGQqVhjrWOJMOGFtCnkMvx5i9dzLfcc8NRh342Sc7sMabeGDxiraNs6n1hgj1stozFn1RtMa0xovPnmtPjlSG/U5Wk2Ut0MKMztcJnyn7H3bcYE0uoTfIoEieukO5io164uuTcxgPXV5Y/lFv8XxMF0pfgAN+nBtDz8/ZgAAAABJRU5ErkJggg==" />
+                    </div>
+                    <p style="color: #111;">Sayana ODC</p>
+                    <i class="fa fa-angle-up" style="margin-left: 5rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFOSURBVHgB3VTBccIwEDwy/EMqQO4AOnAqCOkgdJBUkLRABYYKSCqwOyAd4A6gA7jFq/GhkYXxk53Zkb1zt5JOJ4k8GvZKp1wr35QfyoLaLpX4JGk4jlPli/nHOJEByJVb5UlZKg9c4Z7cUUPMImYwimgIxHZXylrSwE4+le/K6kbsZRU/0h+I/Q3Fsfn2BwX8GX1GWlTS7gbjtzRlw3cWGs+lOZCt0Zw09awC44Lx/2aipXSsuKCxM1rOpNfAuOQuvPGM+bWfwBpvIsZ9UTP/6AXbx0NNbe5zzBjbmcrAxmdu7n9sKdY0tR2AGqJ2ZWACA3tYKAFKUceMY4cH40zMSogvub48jvmYYC4duPeCoIeTF8RjJW0v15KGv9JL6YmFtI+Qf3D8A+QfpBNj8pjB6MYESEaNUT8cjuMqN9SyrsRx2vdSiiN5oDYx2gPhDLFMTisoEbppAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana IDP</p>
+                    <i class="fa fa-angle-up" style="margin-left: 5.6rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGZSURBVHgBxVXRUYNAEF0z/ocOghWIFUgqkA7EChIrUCswViAdYCoAKzCpAKxAUkHcBw9n4SQSZxx35s3d3u2+LG/vLiJ/ZCcjYjxFyBFWKjaK6rfEoeKO8y3JpoozxTnXHxS5jDRU9qhIFcGBOF+RMHaUvSmWMt6WzPHsYl8K/Pq7YjVA8swRskQcb0k+49yx0CR+Z6hor8gUheKqV2lKDseQ4A/z1kl7zgNxJQvI4VSTyXClESsqOPcGYrN279T82tYELLi2k0Y76L4msI5e5CTB+MQ8cFwyrrbYfFZbXSCHT0fMGDQ6NGuxrRhWmbGUpuNAQX/O/USaC3JBH1VPzbzmmRiy9jLk0jSx9V+lK1NlivBJtjZ+aWKd5t3LuEsSS/fMO81rK0CVGwZD5xdD8CFNMwNDdq24MdVari8LSSYmEPri0kTcDzhfiXvuEzEXpH+lkVBK9/NCYkZ/xy/JTQyOJ169Qfmgz7GP0II5HZv0fOiDY+RLI4EvwwZZUlY6728e89BD77Z5Pz70Y/+aQObTr0hWyX/YJ/52ZI+rswO2AAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana Connect</p>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1ZSNDYJADIV7FwfACcRNcANHYAQ38DbSDRhFNwAnwNZUU2pP6w8kfEkTOHqP5l17ALMlxrgPIbQYvQz8dNS5uH7QeRSk8cgRyT2ywcez0uk4JAWHpKQfosZSV0HVreB7Sta4EWEkXMLSf+mjixdW1MaBVkaebQWaTqd/sTYYa5Wx1rGGm8qoeAt/IrHHLT7vPBsC+JB9a/X1x5ANjTFlDXjtoKmB4TTV1tgqr6UtBWs8CQ/aDd9P74TZ8zvTTN4i9wF7cg0/MEnF1EJUpW5B97UJGVLm5L0XPR1kgtlyBf59ZhX9Va8eAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana Expression</p>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEZSURBVHgBrZTNccIwEIWfQLlrYpyz6YAS4g7SAXSQpIIkHaSDOBWkBUqgg/gODHuGwcvK/A2MzILwm7G8XsufV94nG+dchu7DD2AyaFovcyIqL02xsPYPjAFkaEMWbAZ1xOYLhktlPkEF7lVVY6LZGHeqg0jV374toEvSoTTyvz63AZT+ve2i4hwaB6xWuUAnIWgUULxITVCrPewe0wIGQ+jy0PguNyhXK0SFb1gugvcYr7JlX3ZXvzSfjlQg0XQSyrve04cQT2A+iPOhhzF/nsOigQLrh2DbtyUp14frPeOWKpN0FMpHd1kqK0L5Y1O6nDVt+ANE+bl6GTHuQozrcI3Wq74G7QjsXfxUoiUZP8hSfYVqldcseQOUzmPfOaazagAAAABJRU5ErkJggg==" />
+                    </div>
+                    <p style="color: #111;">Logout</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 80%;">
+            <div style="background-color: #47acec; display: flex; justify-content: left; align-items: left; height: 4rem; padding-left: 20px;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFiSURBVHgB3VbtTcNADPUll9+UDToCG1AmoEwAbAAbdAMYgU7QMEEZgQ3oBoS/+eS5SqJLaqcfSqoqTzrpdLbvWedn64jGBlNtiqKY5Hn+iHUtOVpr340xkXvGMWmavij+P/Bf7hAh4AOGe2wjKdDzvDvYNy2iKRJbYTsRQqbw/+K4xmmWZUUcx2J2pwCJP/GddaKuEewRDQSPzoSzEVnNUKrwjY4Anv61rcy9RCXZJ8mKEqGRNACVrFiu1BOg4Bu+s05CcyybcYHnuJLseNa/IAgObge7xx7hQq2Bf+kSYbqMSZIs6AhI87CC2kdcIxoCPBxZKdQTnIG7hXUMcxSY++a7OuPB2HFXhKcKNSMG6gzPON8hEjLiyXBL3QjpQKhEZVGfqSeMb3oPRoT6NtrDOIY1BDDDdtMO4nphPSh/hjXJYKLQ9/1tnWsx8CeC5axNcEhZ6niehUvJn2chlmgbB/4BakWp7OHtV8YAAAAASUVORK5CYII=" alt="Sayana Logo" style="max-width: 30px; margin-right: 10px; border-radius: 50%;">
+                <h1 style="color: white; font-weight: 800; margin-bottom: 0; margin-left: 10px;">Sayana OCR</h1>
+            </div>
+            
+            
+           <div class="filter_content">
+            <div class="file__container">
+                <div class="handwritten_container">
+                    <h4 class="upload_heading">Upload files for handwritten texts</h4>
+                    <div class="select_container">
+                        <select class="select_field active_field">
+                            <option>Paragraph</option>
+                    <option>Word</option>
+                    <option>Reg_no</option>
+                </select>
+            <select class="select_field">
+                <option value="English">English</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+        </div>
+        </div>
+        <div class="container">
+            <div class="card" id="upload-file">
+                <div class="card-body">
+                    <div class="file-upload">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABkCAYAAAAsaNZwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARtSURBVHgB7d3NThtXFMDxc64ddVOpjkQidec8Qd0nqFkE2DVIBKmr+A3aPkHoE6Q8AbCqRIhCdk66wHkCkieod5EaEKw7zJzeM+0QBP6YY+6duXM5/0Vijw1mfozH5s5lQJjT4/2/e9hq/YhEfSDsAlIXQongAyDuYsu8Ga7fH0MF4bQbHu+f9YxJX9iLfQg9pHGW0vqfmw8/gOcmgq28On1ut6gtaFbnWZYt+0a7AbZ6cLpjt/UBNDPvaObqldVXpy8ajMV1jDFHvN8FT11uYfZBBvbBdiCOvG1pOdja67MuZRdH+atgPHlBy5+SaZL0I8PivDw9czDTwucQZ87RDD8dG7t1EZV5ujlFM1maentF8V1mcNu+X/ytxF2doRn7XWosGDd8+mCrSjQDEVQlWhRgXFVo0YBxVaBFBcb5RosOjPOJFiUY5wstWjDOB1rUYJxrtOjBOJdodwKMc4V2Z8A4F2iNBjML/Bx8W7SGb2H4rL9z1gFht0Fr+lOy89XX2UKDn1K0fNwQYtiHIf3Cx1FhgSRolKb5ASJcefl5CzGKIepdu/J7FmEEwtasAZUwsJ9/uQ3xNLArPVg9OLFD1ziWfCBd+Xf2/agXE9iXPE2YIcDOnXof5iIFE6ZgwhRMmIIJUzBhCiZMwYQpmDAFE6ZgwhRMmIIJCxLMDrTwzMIRBFhYYERjTJJH7zaWvn+7sbTMl3kZBFQ4YIx1cbE8/OnbcbGIL/OykNDCAJuAVRQaWv1gM7CKQkKrF6wEVlEoaPWBCbCKQkCrB2wBrKK60aoHuwVWUZ1o1YI5wCqqC606MIdYRXWgVQNWAquY7DH5tk9Tb6sazT9YCSw+gwGl6eupnyJpH86aRlklml+wklho0iNAnD7PC8038+aeVoXmD0yAhQBlJsV1yqLZ0Y5z8JQ3MPtF7znEKiqFZr9Z2+Apf2Bm+pSjBbGK5qKRcLqTJG9g0ybs3hKraCYaQtYHT3nc6ePP11do7eXnvgOsoolo/z2GeQae8jqhzq7Q8erBySERfUTE7+x+7QmC0zqTHgM8VsUMxCd2RbyuREWPkadHjYQpmDAFE6ZgwhRMmIIJUzBhCiZMwYQpmDAFE6ZgwhRMmIIJawQYIbkYcHRSSDMQuzxaen0xH+B1NELrpKC2MDKwc/UI+OUZjAMqrN/5JuzaI+B/2SHnkT1Ox6c+6M045X8thfpL8v3AnC7TV0lhCiZMwYQpmDAFE2YQyNvUoBgzGRkFKxkCHptWmoxAKxVeJB/zt4crByfH9kKjz6vvPaLx26cPHpn/r7wBbWaIuMX/52D/tNu/+5wX2vh4onGSvOeLOdho/f65ybJfQZsYb13FfN3L92HDzYe7ltLbZNrmRtvDjaW94tqNMYGV/ZNdNOBtymOTwgz2hptLg6vLbrzTf2fvUPJUnVHHBtex8uXTPmDtj09dunePz13ah7vVKLP782l/023uMB3DZe32wO74frCvpL2QxtedxHP6kcZ2i3qfEh3O++N3/wKRy5e34jDmYQAAAABJRU5ErkJggg==" alt>
+                        <div class="card-title">Drag and Drop files here</div>
+                        <p class="card-subtitle">Files supported PNG, JPG, JPEG</p>
+                        "or"
+                       <input id="file-input" class="file-input" type="file" accept="image/*">
+                       <div class="capture_btns">
+                        <button class="choose_btn">Choose File</button>
+                        <button class="choose_btn">Capture</button>
+                       
+                        <button id="resetButton" class="retry_img" title="Reset" style="display: none;">
+                       <img title="Reset" class="retry_img" src="https://kidskilkari.com/RTCS/static/media/Retry.6b75703b9ed2ff835b99286d92a5585d.svg" alt="Reset">
+                        </button>
+                    
+                    </div>
+
+                    
+                </div>
+                </div>
+
+              <div class="sample_container">
+                <span>Don't have an image? </span>
+                <a href="#" class="samples">Try samples.</a>
+              </div>  
+            </div>
+            <div class="api_response"></div>
+            <div class="api-progress_container" id="apiProgressContainer">
+                <img class="progress_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABkCAYAAAAsaNZwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARtSURBVHgB7d3NThtXFMDxc64ddVOpjkQidec8Qd0nqFkE2DVIBKmr+A3aPkHoE6Q8AbCqRIhCdk66wHkCkieod5EaEKw7zJzeM+0QBP6YY+6duXM5/0Vijw1mfozH5s5lQJjT4/2/e9hq/YhEfSDsAlIXQongAyDuYsu8Ga7fH0MF4bQbHu+f9YxJX9iLfQg9pHGW0vqfmw8/gOcmgq28On1ut6gtaFbnWZYt+0a7AbZ6cLpjt/UBNDPvaObqldVXpy8ajMV1jDFHvN8FT11uYfZBBvbBdiCOvG1pOdja67MuZRdH+atgPHlBy5+SaZL0I8PivDw9czDTwucQZ87RDD8dG7t1EZV5ujlFM1maentF8V1mcNu+X/ytxF2doRn7XWosGDd8+mCrSjQDEVQlWhRgXFVo0YBxVaBFBcb5RosOjPOJFiUY5wstWjDOB1rUYJxrtOjBOJdodwKMc4V2Z8A4F2iNBjML/Bx8W7SGb2H4rL9z1gFht0Fr+lOy89XX2UKDn1K0fNwQYtiHIf3Cx1FhgSRolKb5ASJcefl5CzGKIepdu/J7FmEEwtasAZUwsJ9/uQ3xNLArPVg9OLFD1ziWfCBd+Xf2/agXE9iXPE2YIcDOnXof5iIFE6ZgwhRMmIIJUzBhCiZMwYQpmDAFE6ZgwhRMmIIJCxLMDrTwzMIRBFhYYERjTJJH7zaWvn+7sbTMl3kZBFQ4YIx1cbE8/OnbcbGIL/OykNDCAJuAVRQaWv1gM7CKQkKrF6wEVlEoaPWBCbCKQkCrB2wBrKK60aoHuwVWUZ1o1YI5wCqqC606MIdYRXWgVQNWAquY7DH5tk9Tb6sazT9YCSw+gwGl6eupnyJpH86aRlklml+wklho0iNAnD7PC8038+aeVoXmD0yAhQBlJsV1yqLZ0Y5z8JQ3MPtF7znEKiqFZr9Z2+Apf2Bm+pSjBbGK5qKRcLqTJG9g0ybs3hKraCYaQtYHT3nc6ePP11do7eXnvgOsoolo/z2GeQae8jqhzq7Q8erBySERfUTE7+x+7QmC0zqTHgM8VsUMxCd2RbyuREWPkadHjYQpmDAFE6ZgwhRMmIIJUzBhCiZMwYQpmDAFE6ZgwhRMmIIJawQYIbkYcHRSSDMQuzxaen0xH+B1NELrpKC2MDKwc/UI+OUZjAMqrN/5JuzaI+B/2SHnkT1Ox6c+6M045X8thfpL8v3AnC7TV0lhCiZMwYQpmDAFE2YQyNvUoBgzGRkFKxkCHptWmoxAKxVeJB/zt4crByfH9kKjz6vvPaLx26cPHpn/r7wBbWaIuMX/52D/tNu/+5wX2vh4onGSvOeLOdho/f65ybJfQZsYb13FfN3L92HDzYe7ltLbZNrmRtvDjaW94tqNMYGV/ZNdNOBtymOTwgz2hptLg6vLbrzTf2fvUPJUnVHHBtex8uXTPmDtj09dunePz13ah7vVKLP782l/023uMB3DZe32wO74frCvpL2QxtedxHP6kcZ2i3qfEh3O++N3/wKRy5e34jDmYQAAAABJRU5ErkJggg==" alt="Progress Image">
+                 <div class="name-bar-container" id="nameBarContainer" style="width: 100%">
+                    <p class="file_name">Sample.png</p>
+                    <p class="info"> Maximum Size: 5MB</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 99%;"></div>
+                    </div>
+                    <div class="progress-text">Uploading...</div>
+                    <div id="apiResponseContainer"></div>
+                </div>             
+            </div>
+        
+            <div class="modal_active">
+                <div class="modal-content try_samples">
+                    <div class="modal_heading_container">
+                        <div>
+                            <h3 class="modal_heading">Sample Images</h3>
+                            <span class="modal_subheading">Select an option to upload a file</span>
+                        </div>
+                        <button class="modal_close_btn">
+                            <i class="fa fa-times">
+                            </i>
+                        </button>
+                    </div>
+                    <div class="images_container">
+                        <div class="images_select_container">
+                            <img src="https://kidskilkari.com/RTCS/static/media/Sample-1.7824f1000b4f4d310823.png" alt="sample_img1" class="sample_image">
+                            <img src="https://kidskilkari.com/RTCS/static/media/Sample-2.58827825febe6a6d94cb.png" alt="sample_img2" class="sample_image">
+                            <img src="https://kidskilkari.com/RTCS/static/media/Sample-3.9ff7679b8880f192a9da.png" alt="sample_img3" class="sample_image">
+                            <img src="https://kidskilkari.com/RTCS/static/media/Sample-4.e58f1f4a7323c3d80613.png" alt="sample_img4" class="sample_image">
+
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>    
+            
+        </div>            
+
+        
+                
+
+
+        
+    
+    </div>
+
+   
+</body>
+</html>
+ 

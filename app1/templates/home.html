@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayana AI Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+<body>
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 20%;">
+            <div style="border-bottom: 1px solid #f4f4f4;">
+                <img src="https://rawattech.com/static/media/Logo.bea90a3f9324e3a374c06ca908e68774.svg"
+                    style="width: 90%; padding: 6%; padding-left: 3rem;" />
+            </div>
+            <div style="padding-top: 2rem;">
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADxSURBVHgB1ZQNEcIwDIVfewgYCigOsIAUFCABJOAAUAA4GA5wwFAwFGwko8f1uqbr+Lvbd5db1+ReszUJMFi01iulVElWu0auox9L+wc/jo01XjFOcE3MaVl4OndrLpk1F8MHksbYz4Kzm+B9jNVo0PgRo4hvhvbnhsj7Ci+RRt4VcEBahhKZ1WhQUhTfMAIH0a2f6LFBByriM8J+qPy+IuxT9BXeIo1F1Cv90x5kVuOp5whzSxta3vid+j6YcVVVZ3rsAi7uvCtpNJpiHZPAXnBdkECsQXJ8wF9mBdfmFO1KSR6bEFiHhjfSB33JGhgsD27+SsbiDuYVAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="font-size: 1em; color: #111; font-weight: 400;">
+                        <a class="nav-link" href="http://127.0.0.1:8000/sayanaocr/#">Sayana OCR</a>
+                      </p>
+                      
+                    <i class="fa fa-angle-up" style="margin-left: 5rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFASURBVHgB1VTRVcMwDLzk5Z8wQc0EZAPMBoyQTegKTAAbABtkhDIB2aDpBEXXyoliEpPS14/ee/ciWYqinGUDV4s8z5+zLNsK95YS+ohzZf09ziNZo88xyXvBo5htVKdTWpRKC8cPSo3buAt2t8L/4bTGATkuhNnCQW8cNWY33yRt4RPjounryYUxaHijtlNWQs810bPGb60PKIIhSexsZ/xGzU/hRvwX9Rv1+cEvDBvbaY0/UWpnAZXxQ8zjVKim1HgN3XH1vfDN+JOTtGQqVhjrWOJMOGFtCnkMvx5i9dzLfcc8NRh342Sc7sMabeGDxiraNs6n1hgj1stozFn1RtMa0xovPnmtPjlSG/U5Wk2Ut0MKMztcJnyn7H3bcYE0uoTfIoEieukO5io164uuTcxgPXV5Y/lFv8XxMF0pfgAN+nBtDz8/ZgAAAABJRU5ErkJggg==" />
+                    </div>
+                    <p style="color: #111;">Sayana ODC</p>
+                    <i class="fa fa-angle-up" style="margin-left: 5rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFOSURBVHgB3VTBccIwEDwy/EMqQO4AOnAqCOkgdJBUkLRABYYKSCqwOyAd4A6gA7jFq/GhkYXxk53Zkb1zt5JOJ4k8GvZKp1wr35QfyoLaLpX4JGk4jlPli/nHOJEByJVb5UlZKg9c4Z7cUUPMImYwimgIxHZXylrSwE4+le/K6kbsZRU/0h+I/Q3Fsfn2BwX8GX1GWlTS7gbjtzRlw3cWGs+lOZCt0Zw09awC44Lx/2aipXSsuKCxM1rOpNfAuOQuvPGM+bWfwBpvIsZ9UTP/6AXbx0NNbe5zzBjbmcrAxmdu7n9sKdY0tR2AGqJ2ZWACA3tYKAFKUceMY4cH40zMSogvub48jvmYYC4duPeCoIeTF8RjJW0v15KGv9JL6YmFtI+Qf3D8A+QfpBNj8pjB6MYESEaNUT8cjuMqN9SyrsRx2vdSiiN5oDYx2gPhDLFMTisoEbppAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana IDP</p>
+                    <i class="fa fa-angle-up" style="margin-left: 5.6rem;"></i>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGZSURBVHgBxVXRUYNAEF0z/ocOghWIFUgqkA7EChIrUCswViAdYCoAKzCpAKxAUkHcBw9n4SQSZxx35s3d3u2+LG/vLiJ/ZCcjYjxFyBFWKjaK6rfEoeKO8y3JpoozxTnXHxS5jDRU9qhIFcGBOF+RMHaUvSmWMt6WzPHsYl8K/Pq7YjVA8swRskQcb0k+49yx0CR+Z6hor8gUheKqV2lKDseQ4A/z1kl7zgNxJQvI4VSTyXClESsqOPcGYrN279T82tYELLi2k0Y76L4msI5e5CTB+MQ8cFwyrrbYfFZbXSCHT0fMGDQ6NGuxrRhWmbGUpuNAQX/O/USaC3JBH1VPzbzmmRiy9jLk0jSx9V+lK1NlivBJtjZ+aWKd5t3LuEsSS/fMO81rK0CVGwZD5xdD8CFNMwNDdq24MdVari8LSSYmEPri0kTcDzhfiXvuEzEXpH+lkVBK9/NCYkZ/xy/JTQyOJ169Qfmgz7GP0II5HZv0fOiDY+RLI4EvwwZZUlY6728e89BD77Z5Pz70Y/+aQObTr0hWyX/YJ/52ZI+rswO2AAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana Connect</p>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1ZSNDYJADIV7FwfACcRNcANHYAQ38DbSDRhFNwAnwNZUU2pP6w8kfEkTOHqP5l17ALMlxrgPIbQYvQz8dNS5uH7QeRSk8cgRyT2ywcez0uk4JAWHpKQfosZSV0HVreB7Sta4EWEkXMLSf+mjixdW1MaBVkaebQWaTqd/sTYYa5Wx1rGGm8qoeAt/IrHHLT7vPBsC+JB9a/X1x5ANjTFlDXjtoKmB4TTV1tgqr6UtBWs8CQ/aDd9P74TZ8zvTTN4i9wF7cg0/MEnF1EJUpW5B97UJGVLm5L0XPR1kgtlyBf59ZhX9Va8eAAAAAElFTkSuQmCC" />
+                    </div>
+                    <p style="color: #111;">Sayana Expression</p>
+                </div>
+                <div style="display: flex; padding: 0.1rem; align-items: center; border-bottom: 1px solid #eeee;">
+                    <div style="padding: 0.8rem;">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEZSURBVHgBrZTNccIwEIWfQLlrYpyz6YAS4g7SAXSQpIIkHaSDOBWkBUqgg/gODHuGwcvK/A2MzILwm7G8XsufV94nG+dchu7DD2AyaFovcyIqL02xsPYPjAFkaEMWbAZ1xOYLhktlPkEF7lVVY6LZGHeqg0jV374toEvSoTTyvz63AZT+ve2i4hwaB6xWuUAnIWgUULxITVCrPewe0wIGQ+jy0PguNyhXK0SFb1gugvcYr7JlX3ZXvzSfjlQg0XQSyrve04cQT2A+iPOhhzF/nsOigQLrh2DbtyUp14frPeOWKpN0FMpHd1kqK0L5Y1O6nDVt+ANE+bl6GTHuQozrcI3Wq74G7QjsXfxUoiUZP8hSfYVqldcseQOUzmPfOaazagAAAABJRU5ErkJggg==" />
+                    </div>
+                    <p style="color: #111;">Logout</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 80%;">
+            <div style="background-color: #47acec; display: flex; justify-content: center; align-items: center; height: 5rem;">
+                <h1 style="color: white; font-weight: 800;">Sayana AI Services</h1>
+            </div>
+            <div style="background-color: #f4f4f4; height: 100%; padding: 0.7rem;">
+            <div
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; background-color: white; padding-bottom: 6rem;">
+
+                <div>
+                    <img style="height: 130px; width: 130px;"
+                        src="data:image/png;base64,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" />
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <p style="margin: 0.1rem; font-size: 2em; font-weight: 700;">👋 Welcome to Sayana AI</p>
+                    <p style="margin: 0.1rem; font-size: 2em; font-weight: 700;">Services</p>
+                    <p style="padding: 0.2rem; margin: 0px; color: #838888;">↞ One Stop Computer Vision Solution ↠</p>
+                    <p style="padding: 0.2rem; margin: 0px; color: #838888;">Developing, Empowering your Business with
+                        Sayana-AI</p>
+                    <p style="padding: 0.2rem; margin: 0px; color: #838888;">Computer Vision Products and Solutions.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
